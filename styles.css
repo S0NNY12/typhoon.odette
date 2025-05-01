@@ -1,0 +1,562 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background-color:#1e88e5;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Button */
+.menu-btn {
+  display: flex;
+ font: normal 150% verdana, sans-serif;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+  background-image: 
+ linear-gradient(to right, rgba(226, 226, 226, 1), rgba(0, 0, 0, 0)),
+    url(https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149228/typhoonrai_tmo_2021351_lrg.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom:15px solid #7ab5e8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffca28;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Content Sections */
+
+h2 {
+  font: bold 200% georgia, sans-serif;
+}
+
+p{
+  font: normal 100% verdana, sans-serif;
+}
+.content-section {
+    width: 80%;
+    overflow: auto;
+    margin: 0 auto 0 auto;
+    padding: 40px 24px 20px 37px;
+    background: #FFF;
+}
+
+.alt-bg {
+  background-color: #e3f2fd;
+}
+
+.section-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.faq-section {
+  padding: 20px 50px;
+  max-width: auto; 
+  width: 100%; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-question {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font: bold 100% verdana, sans-serif;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 10px;
+  color: black;
+  background-color: #ffffff;
+  border-left: 2px solid #007BFF;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #7ab5e8;
+  color: black;
+  padding: 2rem 1rem;
+  transition: left 0.3s;
+  overflow-y: auto; /* Add vertical scroll */
+  z-index: 1000;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.sidebar a {
+  color: black;
+  font: bold 100% verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: white;
+}
+
+.sidebar-slider {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f0f0f0;
+  color: black;
+  border-radius: 8px;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: white;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background-color:#1e88e5;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Button */
+.menu-btn {
+  display: flex;
+ font: normal 150% verdana, sans-serif;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+  background-image: 
+ linear-gradient(to right, rgba(226, 226, 226, 1), rgba(0, 0, 0, 0)),
+    url(https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149228/typhoonrai_tmo_2021351_lrg.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom:15px solid #7ab5e8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffca28;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Content Sections */
+
+h2 {
+  font: bold 200% georgia, sans-serif;
+}
+
+p{
+  font: normal 100% verdana, sans-serif;
+}
+.content-section {
+    width: 80%;
+    overflow: auto;
+    margin: 0 auto 0 auto;
+    padding: 40px 24px 20px 37px;
+    background: #FFF;
+}
+
+.alt-bg {
+  background-color: #e3f2fd;
+}
+
+.section-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.faq-section {
+  padding: 20px 50px;
+  max-width: auto; 
+  width: 100%; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-question {
+  background-color: white;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font: bold 100% verdana, sans-serif;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 10px;
+  color: black;
+  background-color: #ffffff;
+  border-left: 2px solid #007BFF;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #7ab5e8;
+  color: black;
+  padding: 2rem 1rem;
+  transition: left 0.3s;
+  overflow-y: auto; /* Add vertical scroll */
+  z-index: 1000;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.sidebar a {
+  color: black;
+  font: bold 100% verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: white;
+}
+
+.sidebar-slider {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f0f0f0;
+  color: black;
+  border-radius: 8px;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: white;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
+  font-size: 28px; /* similar to h1 size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+/* Footer */
+.site-footer {
+  background: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
